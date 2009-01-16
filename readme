@@ -1,0 +1,9 @@
+JQuery Timeline
+
+- Shows a simple yearly timeline
+- Shows specific dates called milestones
+- Each date shows a popup with specific information
+
+- Will include selection of date range using ui.slider
+- Will include selection of month range by clicking the name of the month
+ 
