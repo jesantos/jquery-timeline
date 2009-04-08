@@ -1,9 +1,16 @@
 JQuery Timeline
 
 - Shows a simple yearly timeline
-- Shows specific dates called milestones
-- Each date shows a popup with specific information
+- Shows specific dates called milestones (missing)
+- Each date shows a popup with specific information (missing)
 
 - Will include selection of date range using ui.slider
 - Will include selection of month range by clicking the name of the month
- 
+
+TO DO:
+*add year selection
+*add leap year
+*add gpl license, headers
+*test in other OS
+
+Currently tested in windows: explorer 8, opera 9, firefox 3, chrome 2

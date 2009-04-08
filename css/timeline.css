@@ -1,0 +1,4 @@
+.timeline { background-color:#eee; }
+.month { padding: 2px 0 2px 0; background-color:#ddd; display:inline-block; text-align:center; }
+.month:hover { background-color: #eee; cursor: pointer; }
+.milestone { display:none; }

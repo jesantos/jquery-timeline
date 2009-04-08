@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>JQuery Timeline</title>
+		<link rel="stylesheet" href="css/timeline.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="css/jquery-ui-1.7.1.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script src="js/jquery-1.3.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-ui-1.7.1.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.timeline.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				$('#myMilestone').timeline({
+					slide: function(event, ui, start, end) {
+						$('#amount').text('from:' + start + ' to: ' + end);
+					},
+					change: function(event, ui, start, end) {
+						$('#amount').text('from:' + start + ' to: ' + end);
+					},
+					monthWidth : 50
+				});
+			});
+		</script>
+		<style type="text/css" media="screen">
+			body { font-family: Garamond ; }
+		</style>
+	</head>
+	<body id="index" onload="" >
+		<div id="content">
+			<h1>Timeline</h1>
+			<div id="myMilestone">
+				<div class="slider"></div>
+				<span class="milestone" month="10" day="19">My Birthday</span>
+			</div>
+			<span id="amount"></span>
+		</div>
+	</body>
+</html>
